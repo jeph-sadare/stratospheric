@@ -1,6 +1,6 @@
-name: Feedback for the ebook
-description: "Everything related to the eBook: typos, layout issues, broken links, explanation gaps, inconsistencies, testimonials, etc."
-labels: [ "ebook-feedback", "triage" ]
+name: Feedback for the online course
+description: "Suggestions for improvements related to the online course, explanations, quizzes, etc."
+labels: [ "course-feedback", "triage" ]
 body:
   - type: markdown
     attributes:
@@ -17,7 +17,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: "Which ebook version are you referring to? You can find the version as part of the changelog (one of the last pages). Pick 'latest' if you can't find it."
+      description: "Which online course version are you referring to? You can find the version as part of the changelog. Pick 'latest' if you can't find it."
     validations:
       required: true
   - type: textarea

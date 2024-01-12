@@ -17,14 +17,15 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     name: Deploy Todo App
-    if: github.ref == 'refs/heads/main'
+    if: ${{ false }}  # disabled for now as we ran out of AWS credits
+    # if: github.ref == 'refs/heads/main'
     steps:
 
     - name: Checkout code
       uses: actions/checkout@v4
 
     - name: Set up JDK 17
-      uses: actions/setup-java@v3
+      uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: 17
